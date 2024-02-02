@@ -64,7 +64,7 @@ for idx, url in enumerate(list_review_url[0:51]):
     time.sleep(1)
     driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
     time.sleep(1)
-    for k in range(1, 31):
+    for k in range(1, 31): #30개로 제한
         review_title_xpath = '//*[@id="contents"]/div[2]/div[2]/div[{}]/div/div[3]/a[1]/div'.format(k)
         review_more_xpath = '//*[@id="contents"]/div[2]/div[2]/div[{}]/div/div[3]/div/button'.format(k)
         try:
